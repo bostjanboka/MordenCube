@@ -25,7 +25,8 @@ public class RotiranjeKocke : MonoBehaviour {
 			}
 		}
 
-		gameObject.transform.Rotate (rotacija);
+		gameObject.transform.Rotate (new Vector2(rotacija.y,-rotacija.x));
+
 		rotacija = Vector2.zero;
 	}
 }
